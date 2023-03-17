@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/**
- * main - A C program that prints with printf function.
- *
- * return : Always 0 (success)
+/** 
+ * main - This is the main function
+ * Description: A C program that prints with prinf function 
+ * return: Always 0 (success)
  */
 
 int main(void)
