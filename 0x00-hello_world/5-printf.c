@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/** 
- * main - This is the main function
- * Description: A C program that prints with prinf function 
- * return: Always 0 (success)
- */
+/**
+ * main - this is the main function
+ *
+ * Return: always 0
+*/
 
 int main(void)
 {
