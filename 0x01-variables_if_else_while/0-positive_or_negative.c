@@ -3,10 +3,10 @@
 #include <time.h>
 
 /**
- *
- * main - Entry point
- * Description - Determines if a number is positive, negative or zero 
+ * main - This is the main function
+ * Description: Prints if number is positive, zero or negative
  * Return: Always 0 (Success)
+ *
  */
 int main(void)
 {
