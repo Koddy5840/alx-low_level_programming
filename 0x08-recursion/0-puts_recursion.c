@@ -6,9 +6,6 @@
  */
 void _puts_recursion(char *s)
 {
-	int i;
-
-	for (i = 0; i < 19; i++)
-	_putchar(s[i]);
+	return s + _puts_recursion(s);
 	_putchar('\n');
 }
