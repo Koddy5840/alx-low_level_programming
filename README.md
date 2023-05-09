@@ -1,35 +1,42 @@
-Low_LEVEL_PROGRAMMING
-0x0C. C - More malloc, free
-0x14. C - Bit manipulation
-C
+low level programming 
+0x15. C - File I/O
+CSyscall
 
     By: Julien Barbier
     Weight: 1
-    Ongoing second chance project - started May 3, 2023 6:00 PM, must end by May 5, 2023 6:00 PM
+    Project will start May 7, 2023 6:00 PM, must end by May 8, 2023 6:00 PM
+    Checker was released at May 8, 2023 12:00 AM
     An auto review will be launched at the deadline
-
-In a nutshell…
-
-    Auto QA review: 0.0/55 mandatory & 0.0/8 optional
-    Altogether:  0.0%
-        Mandatory: 0.0%
-        Optional: 0.0%
-        Calculation:  0.0% + (0.0% * 0.0%)  == 0.0%
 
 Resources
 
 Read or watch:
 
-    Google
-    Youtube
+    File descriptors
+    C Programming in Linux Tutorial #024 - open() read() write() Functions
+
+man or help:
+
+    open
+    close
+    read
+    write
+    dprintf
 
 Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 General
 
-    Look for the right source of information without too much help
-    How to manipulate bits and use bitwise operators
+    Look for the right source of information online
+    How to create, open, close, read and write files
+    What are file descriptors
+    What are the 3 standard file descriptors, what are their purpose and what are their POSIX names
+    How to use the I/O system calls open, close, read and write
+    What are and how to use the flags O_RDONLY, O_WRONLY, O_RDWR
+    What are file permissions, and how to set them when creating a file with the open system call
+    What is a system call
+    What is the difference between a function and a system call
 
 Copyright - Plagiarism
 
@@ -49,10 +56,12 @@ General
     You are not allowed to use global variables
     No more than 5 functions per file
     The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc… is forbidden
+    Allowed syscalls: read, write, open, close
     You are allowed to use _putchar
     You don’t have to push _putchar.c, we will use our file. If you do it won’t be taken into account
     In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
     The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
     Don’t forget to push your header file
     All your header files should be include guarded
+    Tip: always prefer using symbolic constants (POSIX) vs numbers when it makes sense. For instance read(STDIN_FILENO, ... vs read(0, ...
 
